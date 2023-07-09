@@ -1,0 +1,101 @@
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 335px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.img-container {
+    border-bottom: 1px solid rgb(128, 133, 126);
+    background-color: #fff;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.product-desc {
+    width: 100%;
+    height: 40%;
+    font-weight: 700;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.product-title {
+    height: 40%;
+}
+
+.product-price {
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+}
+
+.btn-addToCart {
+    margin-top: 0.8rem;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: #fff;
+
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1a1a1a;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.btn-addToCart:disabled {
+    pointer-events: none;
+}
+
+.btn-addToCart:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.btn-addToCart:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
